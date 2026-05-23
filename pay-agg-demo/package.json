@@ -1,0 +1,13 @@
+{
+  "name": "pay-agg-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "alipay-sdk": "^3.6.2",
+    "express": "^4.22.2",
+    "qrcode": "^1.5.4"
+  },
+  "type": "module"
+}
