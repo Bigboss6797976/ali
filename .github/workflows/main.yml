@@ -1,4 +1,4 @@
-name: Flutter Build APK
+name: Flutter Minimal Build
 
 on:
   push:
@@ -23,10 +23,3 @@ jobs:
 
       - name: Build APK
         run: flutter build apk --release
-
-      - name: Create Release and Upload APK
-        uses: softprops/action-gh-release@v1
-        with:
-          files: build/app/outputs/flutter-apk/app-release.apk
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
